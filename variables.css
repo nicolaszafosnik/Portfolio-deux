@@ -1,0 +1,17 @@
+:root {
+  --color-primary: #A855F7;
+  --color-accent: #22D3EE;
+  --bg-page: #1A0A2E;
+  --bg-card: #2D1254;
+  --text-primary: #E8D5FF;
+  --text-secondary: #A08CC0;
+  --font-heading: 'Bricolage Grotesque', serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-size-base: 16px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+  --radius-card: 8px;
+  --transition-base: 0.2s ease;
+}

@@ -1,0 +1,37 @@
+/* Cette partie crée une fin de page simple et espacée. */
+.site-footer {
+  border-top: 1px solid var(--bg-card);
+  margin-top: var(--spacing-xl);
+}
+
+/* Cette partie aligne les différents contenus du footer. */
+.footer-content {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: var(--spacing-lg);
+}
+
+/* Cette partie regroupe les liens sociaux. */
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+/* Cette partie présente les informations légales et le copyright. */
+.footer-meta {
+  color: var(--text-secondary);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+/* Cette partie retire la marge par défaut du texte dans le footer. */
+.footer-meta p {
+  margin: 0;
+}

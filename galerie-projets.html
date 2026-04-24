@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie - Portfolio UI UX</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="hero.css">
+  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+  <header class="site-header" data-scroll="visible">
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a class="site-brand" href="index.html">Portfolio UI UX</a>
+      <a class="nav-link nav-link-start" href="index.html">Accueil</a>
+      <a class="nav-link" href="galerie-projets.html" aria-current="page">Galerie</a>
+      <a class="nav-link" href="a-propos.html">À propos</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <button class="menu-button" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    </nav>
+    <dialog class="menu-dialog">
+      <button class="menu-close" type="button" aria-label="Fermer le menu">Fermer</button>
+      <a class="menu-link" href="index.html">Accueil</a>
+      <a class="menu-link" href="galerie-projets.html">Galerie</a>
+      <a class="menu-link" href="a-propos.html">À propos</a>
+      <a class="menu-link" href="contact.html">Contact</a>
+    </dialog>
+  </header>
+
+  <main class="page-main">
+    <section class="hero-section">
+      <article class="hero-content">
+        <h1 class="hero-title">Galerie de projets UI UX</h1>
+        <p class="hero-text">Cette galerie réunit des projets pensés comme des parcours complets, du cadrage initial aux tests, avec une attention constante portée à la lisibilité.</p>
+      </article>
+    </section>
+
+    <section class="projects-section">
+      <h2 class="section-title">Tous les projets</h2>
+      <section class="projects-grid">
+        <article class="project-card">
+          <img class="project-image" src="images/projet-01.svg" alt="Écran mobile montrant une interface culturelle avec cartes d'événements et navigation simple">
+          <h3 class="project-title">Parcours Culture</h3>
+          <p class="project-text">Refonte d’une application culturelle pensée pour simplifier la réservation, mieux guider le choix des événements et rendre la navigation plus sereine sur mobile comme sur desktop. Le projet articule recherche utilisateur, tri de contenus, prototype interactif et ajustements de microcopie afin d’installer une expérience régulière, claire et rassurante pour tous.</p>
+          <a class="project-link" href="projet-01.html">Voir le projet</a>
+        </article>
+
+        <article class="project-card">
+          <img class="project-image" src="images/projet-02.svg" alt="Ordinateur portable affichant une boutique minimaliste avec fiches produits et navigation éditoriale">
+          <h3 class="project-title">Objets en Ligne</h3>
+          <p class="project-text">Système d’interface pour une boutique de design indépendante, conçu autour d’une lecture rapide des objets, d’un tunnel d’achat apaisé et d’une identité éditoriale cohérente. Les écrans travaillent la hiérarchie visuelle, la confiance, la comparaison des formats et une présentation plus sensible des matières et usages au quotidien pour chaque visiteur.</p>
+          <a class="project-link" href="projet-02.html">Voir le projet</a>
+        </article>
+
+        <article class="project-card">
+          <img class="project-image" src="images/projet-03.svg" alt="Interface de tableau de bord pédagogique affichée sur un grand écran avec listes et indicateurs de progression">
+          <h3 class="project-title">Campus Dashboard</h3>
+          <p class="project-text">Prototype de tableau de bord pour un service d’apprentissage en ligne, imaginé afin d’aider les étudiantes et étudiants à repérer leurs priorités sans surcharge visuelle. Le travail porte sur la lecture des progrès, l’organisation des modules, les états d’interface et des retours immédiats pendant les actions courantes de chaque semaine.</p>
+          <a class="project-link" href="projet-03.html">Voir le projet</a>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <section class="footer-content">
+      <a class="site-brand" href="index.html">Portfolio UI UX</a>
+      <nav class="footer-social" aria-label="Réseaux sociaux">
+        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://www.behance.net/" target="_blank" rel="noreferrer">Behance</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+      </nav>
+      <section class="footer-meta">
+        <a href="contact.html">Mentions légales</a>
+        <p>Copyright 2026 Portfolio UI UX</p>
+      </section>
+    </section>
+  </footer>
+
+  <script src="menu.js"></script>
+</body>
+</html>

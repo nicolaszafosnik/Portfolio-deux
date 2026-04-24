@@ -1,0 +1,82 @@
+/* Cette partie sépare visuellement la section des projets. */
+.projects-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Cette partie stylise les titres secondaires des sections. */
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-lg);
+  margin-top: 0;
+}
+
+/* Cette partie crée la grille en deux colonnes demandée dans le brief. */
+.projects-grid {
+  display: grid;
+  gap: var(--spacing-lg);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Cette partie donne une structure simple à chaque carte projet. */
+.project-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--bg-card);
+  border-radius: var(--radius-card);
+  padding: var(--spacing-md);
+}
+
+/* Cette partie garde les images bien lisibles avec des coins arrondis. */
+.project-image {
+  border-radius: var(--radius-card);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Cette partie règle les titres de projet dans les cartes. */
+.project-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  margin-top: 0;
+}
+
+/* Cette partie règle les paragraphes de description des projets. */
+.project-text {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+  margin-top: 0;
+}
+
+/* Cette partie donne un style simple au lien vers la page projet. */
+.project-link {
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+/* Cette partie renforce légèrement le lien au survol. */
+.project-link:hover {
+  color: var(--text-primary);
+}
+
+/* Cette partie présente le texte de la page à propos. */
+.about-section {
+  margin-bottom: var(--spacing-xl);
+  max-width: 760px;
+}
+
+/* Cette partie règle le paragraphe principal de présentation. */
+.about-text {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Cette partie adapte la grille sur mobile en une seule colonne. */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

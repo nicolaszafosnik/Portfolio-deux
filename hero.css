@@ -1,0 +1,68 @@
+/* Cette partie règle les espacements principaux de la page. */
+.page-main {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+/* Cette partie crée la grande zone d'introduction en haut des pages. */
+.hero-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Cette partie limite la largeur du texte pour garder une lecture confortable. */
+.hero-content {
+  max-width: 760px;
+}
+
+/* Cette partie donne son rythme principal au titre de la page. */
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: var(--spacing-md);
+  margin-top: 0;
+}
+
+/* Cette partie règle la couleur et la largeur du texte d'introduction. */
+.hero-text {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 680px;
+}
+
+/* Cette partie place le bouton d'appel à l'action après la grille. */
+.hero-cta-section {
+  padding-bottom: var(--spacing-xl);
+  text-align: center;
+}
+
+/* Cette partie transforme le lien d'action en bouton simple. */
+.hero-button {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-card);
+  color: var(--text-primary);
+  display: inline-block;
+  padding: var(--spacing-md) var(--spacing-lg);
+  transition: background-color var(--transition-base);
+}
+
+/* Cette partie ajoute un effet de survol discret au bouton. */
+.hero-button:hover {
+  background-color: var(--color-accent);
+  color: var(--bg-page);
+}
+
+/* Cette partie adapte les grands espacements sur mobile. */
+@media (max-width: 768px) {
+  .page-main {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+}

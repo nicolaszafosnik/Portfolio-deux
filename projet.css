@@ -1,0 +1,81 @@
+/* Cette partie prépare la largeur des pages de détail projet. */
+.project-main {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: var(--spacing-lg);
+}
+
+/* Cette partie place l'image principale en haut de la page. */
+.project-image-section {
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Cette partie donne un aspect simple et large à l'image du projet. */
+.project-detail-image {
+  border-radius: var(--radius-card);
+  width: 100%;
+}
+
+/* Cette partie règle la colonne de texte sous l'image. */
+.project-detail-section {
+  max-width: 760px;
+}
+
+/* Cette partie aligne la discipline et l'année sur une même ligne. */
+.project-metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Cette partie retire les marges automatiques des métadonnées. */
+.project-metadata p {
+  margin: 0;
+}
+
+/* Cette partie met en valeur les informations courtes du projet. */
+.project-tag,
+.project-year {
+  color: var(--color-accent);
+}
+
+/* Cette partie règle le titre principal des pages projet. */
+.project-detail-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: var(--spacing-md);
+  margin-top: 0;
+}
+
+/* Cette partie règle le paragraphe de présentation du projet. */
+.project-detail-text {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-lg);
+  margin-top: 0;
+}
+
+/* Cette partie crée un lien simple pour revenir à la galerie. */
+.project-detail-link {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+/* Cette partie change la couleur du lien au survol. */
+.project-detail-link:hover {
+  color: var(--color-accent);
+}
+
+/* Cette partie adapte la page projet sur mobile. */
+@media (max-width: 768px) {
+  .project-main {
+    padding: var(--spacing-md);
+  }
+
+  .project-detail-title {
+    font-size: 2rem;
+  }
+}

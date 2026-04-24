@@ -1,0 +1,55 @@
+/* Cette partie organise la zone de contact en deux colonnes simples. */
+.contact-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Cette partie crée une grille claire pour les informations de contact. */
+.contact-grid {
+  display: grid;
+  gap: var(--spacing-lg);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Cette partie stylise chaque bloc d'information. */
+.contact-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--bg-card);
+  border-radius: var(--radius-card);
+  padding: var(--spacing-lg);
+}
+
+/* Cette partie met en forme les titres des blocs contact. */
+.contact-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  margin-top: 0;
+}
+
+/* Cette partie règle les textes secondaires de contact. */
+.contact-text {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-md);
+  margin-top: 0;
+}
+
+/* Cette partie rend les liens de contact bien visibles. */
+.contact-link {
+  color: var(--color-accent);
+  display: inline-block;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Cette partie ajoute une légère variation au survol des liens. */
+.contact-link:hover {
+  color: var(--text-primary);
+}
+
+/* Cette partie adapte les cartes contact sur mobile. */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
